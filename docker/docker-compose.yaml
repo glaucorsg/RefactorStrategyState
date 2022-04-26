@@ -1,0 +1,12 @@
+version: '3.7'
+services:
+  mysql:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: "dev"
+      MYSQL_DATABASE: "foodstore"
+    ports:
+      - "3306:3306"
+    volumes:
+      - ~/docker/mysql_aut:/var/lib/mysql
+
